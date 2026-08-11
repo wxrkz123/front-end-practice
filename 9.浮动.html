@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            background-color: lightblue;
+            border: 1px solid black;
+        }
+
+        .father::after {
+            content: "这是一个伪元素示例";
+            display: table;
+            content: "";
+            clear: both;
+        }
+
+        .left-son {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+
+        .right-son {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="father">
+        <div class="left-son">左浮动</div>
+        <div class="right-son">右浮动</div>
+    </div>
+    <p>这是一个清除浮动的示例</p>
+
+</body>
+</html>

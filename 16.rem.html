@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-px {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+        }
+
+        .box-rem {
+            width: 10rem;
+            height: 10rem;
+            background-color: lightcoral;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box-px"></div>
+    <div class="box-rem"></div>
+
+    <script>
+        function resetHtmlFontSize() {
+            document.documentElemnt.style.fontSize = screen.width / 10 + 'px';
+        }
+
+        resetHtmlFontSize();
+
+        window.onresize = function() {
+            resetHtmlFontSize();
+        }
+    </script>
+</body>
+</html>

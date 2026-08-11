@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.baidu.com" method="get">
+        <label for="username">用户名：</label>
+        <input type="text" id="username" name="username" placeholder="请输入用户名" required>
+        <br>
+        <label for="password">密码：</label>
+        <input type="password" id="password" name="password" placeholder="请输入密码" required>
+        <br>
+        <label for="email">邮箱：</label>
+        <input type="email" id="email" name="email" placeholder="请输入邮箱" required>
+        <br>
+        <label for="age">年龄：</label>
+        <input type="number" id="age" name="age" min="1" max="120" required>
+        <br>
+        <label for="gender">性别：</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">男</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">女</label>
+        <br>
+        <label for="hobby">爱好：</label>
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading">阅读</label>
+        <input type="checkbox" id="traveling" name="hobby" value="traveling">
+        <label for="traveling">旅行</label>
+        <input type="checkbox" id="sports" name="hobby" value="sports">
+        <label for="sports">运动</label>
+        <br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>
